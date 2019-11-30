@@ -1,0 +1,29 @@
+<div class="login-page">
+    <div class="d-flex justify-content-md-center">
+        <div class="col-md-4">
+            <img src="assets/images/logo.png" width="150px" class="user-avatar" />
+            <h1>SB Admin BS4 Angular8</h1>
+            <form role="form">
+                <div class="form-content">
+                    <div class="form-group">
+                        <input type="text" ng-model="name" class="form-control input-underline input-lg" id="" placeholder="{{ 'Email' | translate }}">
+                    </div>
+
+                    <div class="form-group">
+                        <input type="password" class="form-control input-underline input-lg" id="" placeholder="{{ 'Password' | translate }}">
+                    </div>
+                </div>
+                <div class="d-flex">
+                    <div class="p-2 bd-highlight">
+                        <a class="btn btn-success" [routerLink]="['/dashboard']" (click)="onLoggedin()">{{ 'Log in' | translate }}</a> &nbsp;
+                    </div>
+                    <div class="p-2 bd-highlight">
+                        <a class="btn btn-default" [routerLink]="['/signup']">{{ 'Register' | translate }}</a>
+                    </div>
+                </div>
+
+
+            </form>
+        </div>
+    </div>
+</div>
